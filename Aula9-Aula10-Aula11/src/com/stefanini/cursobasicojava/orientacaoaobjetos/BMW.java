@@ -1,9 +1,14 @@
 package com.stefanini.cursobasicojava.orientacaoaobjetos;
 
 public class BMW extends Carro {
+	
+	public BMW() {
+		super();
+	}
+	
 	@Override
 	public double calcularTaxaAceleracao(double velocidadeFinal, double tempoFinal) {
-		System.out.println("Sobreescrita");
+		System.out.println("BMW Sobreescrita");
 		return velocidadeFinal / tempoFinal;
 	}
 }
