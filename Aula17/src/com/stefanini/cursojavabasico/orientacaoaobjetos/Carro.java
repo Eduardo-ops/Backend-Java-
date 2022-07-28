@@ -1,6 +1,14 @@
 package com.stefanini.cursojavabasico.orientacaoaobjetos;
 
-public abstract class Carro {
+public class Carro {
+	
+	/*
+	 * Modificadores de acesso
+	 * default -> não é uma palavra chave(palavra reservada). Acessível própria classe ou classe de um mesmo pacote.
+	 * public -> Acessível própria classe, classe mesmo pacote, subclasses (extends), todas as demais classes.
+	 * private -> Acessível propria classe.
+	 * protected -> Acessível própria classe, classe mesmo pacotee subclasses(extends). 
+	 */
 
 	private String marca;
 	private String modelo;
@@ -24,8 +32,6 @@ public abstract class Carro {
 	public void frear() {
 		System.out.println("Freando...");
 	}
-	
-	public abstract void piscarAlerta();
 	
 	public double calcularTaxaAceleracao(double velocidadeFinal, double velocidadeInicial, double tempoFinal, double tempoInicial) {
 		return (velocidadeFinal - velocidadeInicial) / (tempoFinal - tempoInicial) *3.6;
